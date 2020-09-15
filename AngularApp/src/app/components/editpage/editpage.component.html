@@ -1,0 +1,32 @@
+<form>
+  <div class="row">
+    <div class="col col-sm-12 col-md-4 col-lg-4" >
+      <div class="form-group">
+        <label for="name">Name</label>
+        <input class="form-control" type="text" name="name" [(ngModel)]="student.name" id="name">
+      </div>
+       
+    </div>
+    <div class="col col-sm-12 col-md-4 col-lg-4" >
+      <div class="form-group">
+        <label for="age">Age</label>
+        <input id="age" class="form-control" type="number" name="age" [(ngModel)]="student.age">
+      </div>
+        
+    </div>
+    <div class="col col-sm-12 col-md-4 col-lg-4">
+      <div class="form-group">
+        <label for="country">Country</label>
+          <input id="country" class="form-control" type="text" name="country" [(ngModel)]="student.country"><br>
+      </div>
+        
+    </div>
+  </div>
+  <div class="row">
+      <button class="btn btn-primary" (click)="submitForm()">Submit</button>
+  </div>
+ 
+  
+  
+  
+</form>
