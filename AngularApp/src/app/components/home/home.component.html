@@ -21,6 +21,11 @@
       </td>
     </tr>
   </table>
+  <div>
+    <select>
+      <option *ngFor="let student of response" value="{{student.name}}" >{{student.name}}</option>
+    </select>
+  </div>
   <form>
     <div class="row">
       <div class="col col-sm-12 col-md-4 col-lg-4" >

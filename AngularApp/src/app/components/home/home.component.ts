@@ -22,7 +22,7 @@ export class HomeComponent implements OnInit, OnDestroy {
   constructor(private api: ApiService, private router: Router) { }
   ngOnInit() {
     this.api.number = this.api.number + 10;
-    alert(this.api.number);
+    this.api.GetData().pipe(takeUntil(this.destroy)).subscribe(data => this.response = data);
   }
 
   public executeLogic() {
